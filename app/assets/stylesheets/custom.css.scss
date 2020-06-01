@@ -1,0 +1,55 @@
+$navbar-default-bg: green;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+.center {
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: asset-url('kitchen.jpg');
+    background-size: cover;
+    height: 400px;
+}
+
+.jumbotron h1, h2 {
+    color: #000;
+    text-shadow: 3px 3px 2px silver;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    font-family: 'Courgette', cursive;
+    font-weight: bolder;
+}
+
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #fff;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#logo:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-xlarge {
+    background-color: green;
+    text-decoration: none;
+}
+
+.btn-xlarge:hover {
+    background-color: lightred;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
