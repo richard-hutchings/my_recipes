@@ -25,6 +25,11 @@ $navbar-default-bg: green;
     font-weight: bolder;
 }
 
+#intro h4, p {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
 
 #logo {
     float: left;
@@ -52,4 +57,23 @@ $navbar-default-bg: green;
     text-align: center;
     font-weight: bold;
     font-style: italic;
+}
+
+.description {
+    margin: 0;
+}
+
+.well a {
+    color: green;
+}
+
+.chef_info {
+    margin-top: 10px;
+}
+ 
+.recipe-actions {
+    padding-top: 5px;
+    a {
+        color: #fff;
+    }
 }
