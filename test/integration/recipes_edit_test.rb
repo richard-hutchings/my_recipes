@@ -5,8 +5,9 @@ class RecipesEditTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
   def setup
-    @chef = Chef.create!(chefname: "Richard", email: "richard@example.com")
-    @recipe = Recipe.create!(name: "The Perfect Egg", description: "Place egg into simmering water, turn up to a rolli...", chef: @chef)
+    @chef = Chef.create!(chefname: "Richard", email: "richard@example.com",
+                        password: "password", password_confirmation: "password")
+    @recipe = Recipe.create(name: "The Perfect Egg", description: "Place egg into simmering water, turn up to a rolli...", chef: @chef)
   end 
   
   test 'reject invalid recipe update' do
@@ -30,5 +31,4 @@ class RecipesEditTest < ActionDispatch::IntegrationTest
     assert_match updated_name, @recipe.name
     assert_match updated_description, @recipe.description
   end 
-   
 end

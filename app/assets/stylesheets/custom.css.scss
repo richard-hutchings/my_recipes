@@ -31,6 +31,7 @@ $navbar-default-bg: green;
     font-style: italic;
 }
 
+
 #logo {
     float: left;
     font-size: 1.7em;
@@ -63,8 +64,11 @@ $navbar-default-bg: green;
     margin: 0;
 }
 
-.well a {
+.well {
+    box-shadow: 3px 3px 3px grey;
+    a {
     color: green;
+    }
 }
 
 .chef_info {
