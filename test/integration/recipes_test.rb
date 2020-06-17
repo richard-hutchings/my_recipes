@@ -27,7 +27,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
  
 
   test "should get recipes show" do
-    get recipe_path(@recipe)
+    get recipes_path(@recipe)
     assert_template 'recipes/show'
     assert_match @recipe.name, response.body
     assert_match @recipe.description, response.body
