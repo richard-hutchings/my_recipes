@@ -18,10 +18,12 @@
         </p>
     </div>
     <div class="recipe-actions">
+        <% if logged_in? && current_chef === @recipe.chef %>
         <%= link_to "Edit this Recipe", edit_recipe_path(@recipe), class: "btn btn-s btn-warning" %>
         <%= link_to "Delete this Recipe", recipe_path(@recipe), method: :delete,
                                         data: {confirm: "Are you sure you want to Delete this Recipe?" },
                                         class: "btn btn-s btn-danger" %>
+        <% end %>
         <%= link_to "Return to Recipes Listing", recipes_path, class: "btn btn-s btn-primary" %>
     </div>
 </div>
