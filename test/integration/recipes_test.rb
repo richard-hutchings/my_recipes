@@ -28,7 +28,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
 
   test "should get recipes show" do 
     sign_in_as(@chef, "password") 
-    get recipes_path(@recipe)
+    get recipe_path(@recipe)
     assert_template 'recipes/show'
     assert_match @recipe.name, response.body
     assert_match @recipe.description, response.body
