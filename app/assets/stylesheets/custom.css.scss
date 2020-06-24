@@ -59,6 +59,7 @@ $navbar-default-bg: green;
     font-style: italic;
 }
 
+
 .description {
     margin: 0;
 }
@@ -92,3 +93,6 @@ $navbar-default-bg: green;
     font-size: 1.2em;
 }
 
+.input_checkbox input {
+    width: auto !important;
+}
