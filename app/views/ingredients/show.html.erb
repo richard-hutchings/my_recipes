@@ -1,4 +1,4 @@
-<%= render 'shared/page_title', title: " #{@ingredient.name.capitalize}" %>
+<%= render 'shared/page_title', title: "#{@ingredient.name.capitalize}" %>
     <% if @ingredient.recipes.count != 0 %>
         <h4 align="center">Recipes contaning <%= @ingredient.name.capitalize %></h4>
         <div align="center">
