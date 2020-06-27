@@ -35,7 +35,7 @@ $(document).on('keypress', '[data-behavior~=room_speaker]', function(event) {
 
 /* $(document).on('click', '[data-send~=message]', function(event) {
     submitMessage(event);
-});  */ 
+}); */   
 
 $(document).on('turbolinks:load', function() {
   $("#new_message").on("ajax:complete", function(e, data, status) {
