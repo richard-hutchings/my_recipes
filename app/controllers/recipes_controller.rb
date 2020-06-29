@@ -1,6 +1,4 @@
 class RecipesController < ApplicationController
-    before_action :set_recipe, only: [:show, :edit, :update, :destroy]
-    before_action :require_user, except: [:index, :show] 
     before_action :require_same_user, only: [:edit, :update, :destroy]
     before_action :set_recipe, only: [:show, :edit, :update, :destroy, :like] 
     before_action :require_user, except: [:index, :show, :like]
@@ -71,9 +69,10 @@ class RecipesController < ApplicationController
     end
     
     def require_same_user 
-        if current_chef != @recipe.chef and !current_chef.admin?
-            flash[:danger] = "You can only edit and delete your own recipes."
-            redirect_to :recipes_path
+       # if current_chef != @recipe.chef and !current_chef.admin? (breaks edit- no method for chef)
+        if current_chef != @chef and !current_chef.admin?
+            flash[:danger] = "At present only admin can edit and delete your recipes."
+            redirect_to recipes_path
         end 
     end 
     
