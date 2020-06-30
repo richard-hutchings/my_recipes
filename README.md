@@ -1,3 +1,7 @@
+Recipe App 
+created as part of the professional Ruby On Rails Developers course
+2020
+
 # README
 
 This README would normally document whatever steps are necessary to get the
