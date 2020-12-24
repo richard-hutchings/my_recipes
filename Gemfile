@@ -11,7 +11,7 @@ end
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 ##gem 'rails', '~> 5.2.4'
 # Bootstrap
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap-sass', '~> 3.4.1'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.3.13'  ### moved to production
 # Use Puma as the app server
