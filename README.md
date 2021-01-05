@@ -1,28 +1,14 @@
-Recipe App 
-created as part of the professional Ruby On Rails Developers course
-2020
+My Great Recipe App 
 
-# README
+Richard Hutchings 2020
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version 5
 
-Things you may want to cover:
+Created as part of Ruby on Rails Development Course
+Recipe App
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Login to Add or Delete your Recipes,
+Chef Chat - chat room in Real Time
+Add Comments to your favourite recipes
+like or dislike feature on all recipes
+View Recipes or search by ingredients, search by Chefs..
